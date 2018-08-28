@@ -1,0 +1,99 @@
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Muli', sans-serif;*/
+* {
+	box-sizing: border-box;
+}
+body{
+  background:url("assets/wedding-landing-background.png") repeat;
+}
+.cover {
+  display: table;
+  height: 100vh;
+  width: 100vw;
+  background:url("assets/wedding-landing-cover.jpg") no-repeat 70% center;
+  background-size: cover;
+}
+.title-box {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.title{
+  padding: 1rem 0;
+  margin: 0;
+  background: hsla(100,0%,0%,.6);
+}
+
+.headline {
+  font-family: 'Great Vibes', cursive;
+  color: rgba(210,186,135);
+  text-align: center;
+  font-size: 3.15rem;
+  margin-top: 0.3em;
+  margin-bottom: 0.2em;
+
+}
+
+.tagline,.marry_date {
+  font-family: 'Libre Baskerville', serif;
+  color: hsla(0,0%,100%,.9);
+  text-align: center;
+  letter-spacing: .15rem;
+  font-size: 1.25rem;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  width: 200px;
+}
+
+.date-box{
+  text-align: center;
+}
+
+.marry_date{
+  display: inline-block;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.date-box hr{
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  padding: 0;
+  border-style: inset;
+  width: 30px;
+}
+.program{
+  background: hsla(100,0%,0%,.6);
+}
+.program h2{
+  font-family: 'Great Vibes', cursive;
+  color: rgba(210,186,135);
+  font-size: 3.15rem;
+  text-align: center;
+  padding-top: 1.5rem;
+  padding-bottom: 1.0rem;
+}
+
+.program p{
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.program p,ul{
+  font-family: 'Muli', sans-serif;
+  color: rgba(210,186,135);
+  vertical-align: middle;
+  text-align: left;
+  padding:0 1.5rem;
+  line-height: 1.5rem;
+}
