@@ -2,11 +2,17 @@
 font-family: 'Libre Baskerville', serif;
 font-family: 'Muli', sans-serif;*/
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 body{
   background:url("assets/wedding-landing-background.png") repeat;
+  background-size: cover;
 }
+
+/*-------------------------------------------- 
+                      Header 
+--------------------------------------------*/
+
 .cover {
   display: table;
   height: 100vh;
@@ -17,6 +23,7 @@ body{
 .title-box {
   display: table-cell;
   vertical-align: middle;
+  font-weight: bold;
 }
 
 .title{
@@ -72,17 +79,62 @@ hr {
   border-style: inset;
   width: 30px;
 }
-.program{
+
+/*-------------------------------------------- 
+                  Locations 
+--------------------------------------------*/
+
+
+.locations, .gifts{
+  font-family: 'Libre Baskerville', serif;
+  width: 100vw;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 2rem auto;
+}
+
+.locations h3{
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem auto
+}
+.locations p, .gifts p{
+  margin: 1rem auto
+}
+
+.locations hr { 
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:solid;
+  width: 70px;
+}
+
+.locations_img, .gifts_img {
+  width: 5rem;
+  height: 5rem;
+  margin: 0.1rem;
+}
+
+/*-------------------------------------------- 
+                  Program 
+--------------------------------------------*/
+
+
+.program, .questions{
   background: hsla(100,0%,0%,.6);
   width: 100vw;
 }
-.program h2{
+.program h2,.locations h2,.gifts h2, .questions h2{
   font-family: 'Great Vibes', cursive;
-  color: rgba(210,186,135);
-  font-size: 3.15rem;
+  font-size: 2.75rem;
   text-align: center;
   padding-top: 1.5rem;
   padding-bottom: 1.0rem;
+}
+.program h2, .questions h2{
+  color: rgba(210,186,135);
 }
 
 .program p{
@@ -97,4 +149,44 @@ hr {
   text-align: left;
   padding:0 1.5rem;
   line-height: 1.5rem;
+  
 }
+
+/*-------------------------------------------- 
+                    Questions 
+--------------------------------------------*/
+
+.questions{
+  color: rgba(210,186,135);
+}
+
+
+.questions h3{
+
+}
+
+.questions q{
+
+}
+
+.questions p{
+
+}
+
+.questions hr { 
+  color: rgba(210,186,135);
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style:solid;
+  width: 70px;
+}
+
+/*-------------------------------------------- 
+                    Contact 
+--------------------------------------------*/
+
+/*-------------------------------------------- 
+                    Footer 
+--------------------------------------------*/
