@@ -5,8 +5,24 @@ font-family: 'Muli', sans-serif;*/
   box-sizing: border-box;
 }
 body{
-  background:url("assets/wedding-landing-background.png") repeat;
-  background-size: cover;
+  background:url("assets/wedding-landing-background.png") repeat center;
+  color: #444349;
+  font-size: 1.125rem;
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}  
+.linkstyle{
+  text-decoration: none;
+  color: #bd806e;
+}
+
+.linkstyle:hover{
+  color: #eda087;
 }
 
 /*-------------------------------------------- 
@@ -17,18 +33,26 @@ body{
   display: table;
   height: 100vh;
   width: 100vw;
-  background:url("assets/wedding-landing-cover.jpg") no-repeat 70% center;
-  background-size: cover;
+  background:url("assets/wedding-landing-cover.jpg") no-repeat 70%center/cover;
+  text-align: center;
 }
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+
+}
+
 .title-box {
   display: table-cell;
   vertical-align: middle;
-  font-weight: bold;
 }
 
 .title{
   padding: 1rem 0;
-  margin: 0;
+  margin: 0 auto;
   background: hsla(100,0%,0%,.6);
 }
 
@@ -42,6 +66,20 @@ body{
 
 }
 
+@media (min-width: 768px) {
+
+  .title {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  
+  .headline {
+    font-size: 7rem;
+  }
+
+}
+
 .tagline,.marry_date {
   font-family: 'Libre Baskerville', serif;
   color: hsla(0,0%,100%,.9);
@@ -50,6 +88,12 @@ body{
   font-size: 1.25rem;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
+}
+
+@media (min-width:768px){
+  .tagline{
+  text-transform: uppercase;
+  }
 }
 
 hr { 
@@ -81,30 +125,40 @@ hr {
 }
 
 /*-------------------------------------------- 
-                  Locations 
+                  Locations & Gifts
 --------------------------------------------*/
 
 
-.locations, .gifts{
-  font-family: 'Libre Baskerville', serif;
+.locations, .gifts, .contacts{
+  font-family: 'Muli', sans-serif;
   width: 100vw;
   text-align: center;
   line-height: 1.5rem;
-  margin: 2rem auto;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .locations h3{
   text-align: center;
   font-weight: bold;
-  margin: 1rem auto
+  font-family: 'Libre Baskerville', serif;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
+
 .locations p, .gifts p{
-  margin: 1rem auto
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
+
+.locations p{
+  
+}
+
 
 .locations hr { 
   margin-top: 1em;
-  margin-bottom: 0.3em;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   border-style:solid;
@@ -112,26 +166,40 @@ hr {
 }
 
 .locations_img, .gifts_img {
-  width: 5rem;
-  height: 5rem;
-  margin: 0.1rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
+@media (min-width:768px){
+  .no-mobile{
+    display: inline-block;
+    width: 33%;
+  }
+  
+  .locations hr { 
+    display: none;
+  }
+}
+
+
 /*-------------------------------------------- 
-                  Program 
+                  Program  & Gifts
 --------------------------------------------*/
 
 
 .program, .questions{
+  color: rgba(210,186,135);
   background: hsla(100,0%,0%,.6);
   width: 100vw;
+  font-family: 'Muli', sans-serif;
 }
-.program h2,.locations h2,.gifts h2, .questions h2{
+
+.program h2,.locations h2,.gifts h2, .questions h2, .contacts h2{
   font-family: 'Great Vibes', cursive;
   font-size: 2.75rem;
   text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.0rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
 }
 .program h2, .questions h2{
   color: rgba(210,186,135);
@@ -145,11 +213,24 @@ hr {
 .program p,ul{
   font-family: 'Muli', sans-serif;
   color: rgba(210,186,135);
-  vertical-align: middle;
   text-align: left;
-  padding:0 1.5rem;
+  padding: 0 1.5rem;
   line-height: 1.5rem;
-  
+}
+
+.program ul{
+  padding-bottom: 1.5rem;
+}
+
+.gifts p{
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width:768px){
+  .program_no_mobile{
+    max-width: 23rem;
+    margin: 0 auto;
+  }
 }
 
 /*-------------------------------------------- 
@@ -157,36 +238,75 @@ hr {
 --------------------------------------------*/
 
 .questions{
-  color: rgba(210,186,135);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
 }
 
-
 .questions h3{
-
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .questions q{
-
+  font-weight: bold;
 }
 
-.questions p{
 
+.questions p{
+  margin-bottom: 1rem;
 }
 
 .questions hr { 
   color: rgba(210,186,135);
   margin-top: 1em;
-  margin-bottom: 0.3em;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
   border-style:solid;
-  width: 70px;
+  width: 50vw;
 }
 
+@media (min-width:768px){
+
+  .faq_no_mobile{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+  }
+  
+  .questions hr { 
+    display: none;
+  }
+
+}
 /*-------------------------------------------- 
                     Contact 
 --------------------------------------------*/
 
+
+.contacts p{
+  margin: 1.5rem auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
 /*-------------------------------------------- 
                     Footer 
 --------------------------------------------*/
+.foot{
+  color: rgba(255,255,255);
+  background: #606060;
+  width: 100vw;
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 0.9rem;
+}
